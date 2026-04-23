@@ -286,6 +286,27 @@
     .task-title { font-size: 0.88rem; font-weight: 700; color: var(--text); margin-bottom: 2px; }
     .task-sub   { font-size: 0.74rem; color: var(--text-2); line-height: 1.4; }
 
+    /* ══ CALENDAR ══════════════════════════════ */
+    .cal-list { display: flex; flex-direction: column; gap: 0; padding: 4px 18px; }
+    .cal-row {
+      display: flex; align-items: flex-start; gap: 14px;
+      padding: 12px 0; border-bottom: 1px solid var(--border);
+    }
+    .cal-row:last-child { border-bottom: none; }
+    .cal-time {
+      font-size: 0.78rem; font-weight: 800;
+      color: var(--gold); min-width: 58px; padding-top: 2px;
+      flex-shrink: 0;
+    }
+    .cal-body { flex: 1; }
+    .cal-title { font-size: 0.9rem; font-weight: 700; color: var(--text); margin-bottom: 2px; }
+    .cal-loc   { font-size: 0.75rem; color: var(--text-3); line-height: 1.4; }
+    .cal-links { margin-top: 4px; display: flex; flex-direction: column; gap: 2px; }
+    .cal-links a {
+      font-size: 0.73rem; color: var(--indigo); text-decoration: none; font-weight: 600;
+    }
+    .cal-empty { font-size: 0.85rem; color: var(--text-3); padding: 10px 18px; }
+
     /* ══ AFFIRMATION ════════════════════════════ */
     .aff-card {
       background: linear-gradient(135deg, #2d1f4e 0%, #1c1b2e 100%);
@@ -397,6 +418,48 @@
         <div class="win-badge">❤️ Relationships</div>
         <div class="win-task">Set your relationship win for today</div>
         <div class="win-note">No relationship task yet. Add one with tag <strong>#Relationships</strong> in TickTick.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ TODAY'S CALENDAR ══════════════════════ -->
+  <div class="section">
+    <div class="sec-head">
+      <div class="sec-icon" style="background:#eff6ff;color:#2563eb">📅</div>
+      <span class="sec-title">Today's Calendar</span>
+    </div>
+    <div class="card cal-list">
+      <div class="cal-row">
+        <div class="cal-time">5:30 AM</div>
+        <div class="cal-body">
+          <div class="cal-title">🥚 Cook Scrambled Eggs for Work</div>
+          <div class="cal-loc">Until 7:00 AM · At home · Scrambled eggs for ~25 people · Oven + cast iron method</div>
+        </div>
+      </div>
+      <div class="cal-row">
+        <div class="cal-time">7:12 AM</div>
+        <div class="cal-body">
+          <div class="cal-title">🚗 Depart for Work</div>
+          <div class="cal-loc">Until 7:42 AM · Leave by 7:12 · Arrive 8:00–8:15 AM to set up before 8:30 meeting</div>
+        </div>
+      </div>
+      <div class="cal-row">
+        <div class="cal-time">11:00 AM</div>
+        <div class="cal-body">
+          <div class="cal-title">🚘 Car Detailing — Eric</div>
+          <div class="cal-loc">Until 1:00 PM · Mobile detail · Confirm exact location with Eric</div>
+        </div>
+      </div>
+      <div class="cal-row">
+        <div class="cal-time">7:15 PM</div>
+        <div class="cal-body">
+          <div class="cal-title">📡 WSB Training — Lake Balboa Financial Center</div>
+          <div class="cal-loc">Until 9:30 PM · 16600 Sherman Way, Ste 276, Van Nuys, CA 91406</div>
+          <div class="cal-links">
+            <a href="https://worldsystembuilder.zoom.us/j/968705905?pwd=SVJCdEg2d3hxa05KUXRTZElSbjRTUT09" target="_blank">🔗 National Training Zoom (7:30–8:20 PM)</a>
+            <a href="https://us02web.zoom.us/j/3373733366?pwd=dUNNYUhYQVhDVnc4TVVkbURRNHR1Zz09" target="_blank">🔗 Local Office Zoom (8:20–9:00 PM)</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
